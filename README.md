@@ -7,5 +7,5 @@ This is lore generator tool to randomly create any character's backstory. Mainly
 
 To-do list:
 1. Stages 2-5 generation
-2. Text content
+2. Text content and descriptions etc.
 3. Save textbox to text file function
