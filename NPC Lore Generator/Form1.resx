@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="richTextBox1.Text" xml:space="preserve">
-    <value>This is NPC Lore Generator. Here you can randomly generate backstory of your character, customize generation settings and save results as a text file.
+    <value>This is NPC Lore Generator. Here you can randomly generate the backstory of your character, customize generation settings and save results as a text file.
 
 // 
 The story of your character goes through stages: 1. world, 2. ....  Your character will go through every stage you selected.
@@ -126,8 +126,7 @@ Each stage can affect the following ones (e.g. character that lived in city is m
 ... 
 
 
-Note: When you press Generate button, all previous generated data is cleared.
-</value>
+Note: When you press Generate button, all previous generated data is cleared.</value>
   </data>
   <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>

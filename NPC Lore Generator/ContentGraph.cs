@@ -11,48 +11,6 @@ namespace NPC_Lore_Generator
 
     public class ContentGraph
     {
-
-        /*Node1 node1 = new Node1();
-        Node2 node2 = new Node2();
-        Node3 node3 = new Node3();
-        Node4 node4 = new Node4();
-        Node5 node5 = new Node5();
-        Node6 node6 = new Node6();
-        Node7 node7 = new Node7();
-        Node8 node8 = new Node8();
-        Node9 node9 = new Node9();*/
-
-        //Nodes[] nodes = new Nodes[Node1, Node2, Node3, Node4, Node5, Node6, Node7, Node8, Node9];
-
-        //Object[] nodes = new object[9] {Node1 };
-
-
-
-        //Nodes[] = {Node1, Node2, Node3, Node4, Node5, Node6, Node7, Node8, Node9};
-
-        //ContentGraph[] nodes = new ContentGraph[2];    
-        //nodes[1] = new ContentGraph();
-
-        /* ContentGraph[] arrayGraphs<ContentGraph>(int length) where ContentGraph : new()
-         {
-             ContentGraph[] nodes = new ContentGraph[length];
-             for (int i = 0; i < length; i++ )
-             {
-                 nodes[i] = new ContentGraph();
-             }
-             return nodes;
-         }*/
-
-        //Nodes[] nodes = arrayGraphs
-
-
-        //var nodes = new ContentGraph[2].Select(h => new ContentGraph()).ToArray();
-
-
-        // ContentGraph[] nodes = new ContentGraph[3];
-
-
-        
         public ContentGraph(int index)
         {
             Content[] contentArray = new Content[10];
@@ -68,15 +26,9 @@ namespace NPC_Lore_Generator
             CurrentText = contentArray[index].ContentText;
         }
 
-
-
-
-
-        //public int CurrentGraph;  // Current number to process to get the text.
+        // Current number to process to get the text.
         public string CurrentText;
 
-
- 
         // Takes CurrentGraph int and extracts node's random string
         public string ExtractContent()
         {
@@ -84,7 +36,7 @@ namespace NPC_Lore_Generator
         }
 
 
-        // Initializes graphs with your sentences one of which is chosen randomly. Up to 3 sentences yet.
+        // Initializes graphs with your sentences one of which is chosen randomly. Up to 3 sentences yet. Maybe add 4 and 5 content.
         public class Content
         {
             private string contentText1;
@@ -130,70 +82,9 @@ namespace NPC_Lore_Generator
                     contentText1 = value;
                     contentText2 = value;
                     contentText3 = value;
-                    //contentText = { contentText1 = value; }
-                    //contentText = new string[3] { contentText1 = value, contentText2 = value, contentText3 = value };
-                   // string[] contentText = { contentText1 = value, contentText2 = value, contentText2 = value };
                 }
             }
 
         }
-
-        /*public class Node1
-        {
-            /*string ContentText1 = "You see a Desert";
-            string ContentText2 = "You see some sands and a flaming sun";
-            string ContentText3 = "You see a sandstorm and pray to survive";
-            
-            string[] ContentText = { "You see a Desert", "You see some sands and a flaming sun", "You see a sandstorm and pray to survive" };
-
-
-            public string getContent()
-            {
-                Random random = new Random();
-                int index = random.Next(ContentText.Length);
-                return ContentText[index];   
-            }
-
-        }
-
-        public class Node2
-        {
-            public string ContentText1 = "You see a Coast";
-        }
-
-        public class Node3
-        {
-            public string ContentText1 = "You see a Forest";
-        }
-
-        public class Node4
-        {
-            public string ContentText1 = "You see a Steppe";
-        }
-
-        public class Node5
-        {
-            public string ContentText1 = "You see a Grassland";
-        }
-
-        public class Node6
-        {
-            public string ContentText1 = "You see a Rainforest/Swamp";
-        }
-
-        public class Node7
-        {
-            public string ContentText1 = "You see a Mountain hill";
-        }
-
-        public class Node8
-        {
-            public string ContentText1 = "You see Island among the seas";
-        }
-
-        public class Node9
-        {
-            public string ContentText1 = "You see snow carpet everywhere. Not a sound can go through";
-        }*/
     }
 }

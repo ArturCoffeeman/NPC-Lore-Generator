@@ -101,13 +101,6 @@ namespace NPC_Lore_Generator
             }
         }
 
-        /*protected override void OnPaint(PaintEventArgs e) // you can safely omit this method if you want
-        {
-            e.Graphics.FillRectangle(Brushes.Tan, Top);
-            e.Graphics.FillRectangle(Brushes.Tan, Left);
-            e.Graphics.FillRectangle(Brushes.Tan, Right);
-            e.Graphics.FillRectangle(Brushes.Tan, Bottom);
-        }*/
 
         // Window Dragging
         private const int
@@ -128,29 +121,6 @@ namespace NPC_Lore_Generator
 
         }
 
-
-        // Sliding buttons function
-        /*void slider()
-        {
-            if (isClosed == true)
-            {
-                sliderDropDown.Height += 10;
-                if (sliderDropDown.Size == sliderDropDown.MaximumSize)
-                {
-                    timer1.Stop();
-                    //isClosed = false; 
-                }  
-            }
-            else
-            {
-                sliderDropDown.Height -= 10;
-                if (sliderDropDown.Size == sliderDropDown.MinimumSize)
-                {
-                    timer1.Stop();
-                    //isClosed = true;
-                }  
-            }
-        }*/
 
         private Panel sliderDropDown;
         private bool isClosed;
@@ -188,30 +158,17 @@ namespace NPC_Lore_Generator
             sliderDropDown = this.panelDropDown_0;
             timer1.Start();
 
-            /* // slider adjust
-            sliderDropDown = this.flowLayoutPanel2;
-            timer1.Start();*/
 
             // Change starting button text
             if (FlipFlop_Button2 == false)
             {
                 button2.Text = "Open";
-
-
-                /*flowLayoutPanel1.AutoScroll = false;
-                flowLayoutPanel1.VerticalScroll.Enabled = false;
-                flowLayoutPanel1.HorizontalScroll.Enabled = false;*/
-
                 flowLayoutPanel1.AutoScroll = false;
-                //richTextBox1.Visible = true;
-
-
             }
             else
             {
                 button2.Text = "Close";
                 flowLayoutPanel1.AutoScroll = true;
-
             } 
         }
 
@@ -235,9 +192,6 @@ namespace NPC_Lore_Generator
         {
             flowLayoutPanel1.VerticalScroll.Visible = false;
             flowLayoutPanel1.VerticalScroll.Enabled = false;
-           // flowLayoutPanel1.HorizontalScroll.Visible = false;
-            //flowLayoutPanel1.HorizontalScroll.Enabled = false;
-            //flowLayoutPanel1.AutoScroll = true;
         }
 
         private void panelDropDown_0_Paint(object sender, PaintEventArgs e)
@@ -272,8 +226,7 @@ namespace NPC_Lore_Generator
 
         private void trackBar1_Scroll(object sender, EventArgs e)
         {
-            //this.trackBar1.Visible = false;  // You can disable visibility and draw over.
-            
+
         }
 
         private void textBox1_Click(object sender, EventArgs e)
@@ -465,16 +418,10 @@ namespace NPC_Lore_Generator
 
         }
 
-
-
-        /*public void TextUpdate(string message)
+        private void richTextBox1_TextChanged(object sender, EventArgs e)
         {
-            richTextBox2.Text += message;
-        }*/
 
-
-
-
+        }
 
 
         // Window resizing
@@ -504,51 +451,5 @@ namespace NPC_Lore_Generator
                 else if (Bottom.Contains(cursor)) message.Result = (IntPtr)HTBOTTOM;
             }
         }
-
-
-
-
-
-
-        /*
-        // Generator
-        public class Receiver
-        {
-            public int Condition { get; set; }
-            public Receiver(int condition)
-            {
-                Condition = condition;
-            }
-        }
-
-        // Responsibility Chain
-        abstract class GenerateHandler
-        {
-            public GenerateHandler Successor { get; set; }
-            public abstract void Handle(Receiver receiver);
-        }
-
-        // Phase 1 generate
-        class Phase1Handler : GenerateHandler
-        {
-            public override void Handle(Receiver receiver)
-            {
-                if (receiver.Condition == 0)
-                {
-                    Form1._Form1.richTextBox2.Text = "YOU FAKIN SHIT NET FRAMEWORK KYS DEVS PLS";
-                }
-                else
-                {
-                    Form1._Form1.richTextBox2.Text = "KYS DEVS OF NETFRAMEWORK";
-                }
-
-                // throw new NotImplementedException();
-                if (Successor != null)
-                    Successor.Handle(receiver);
-            }
-        }*/
-
-
-
     }
 }
