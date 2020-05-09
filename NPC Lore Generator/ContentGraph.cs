@@ -8,7 +8,7 @@ namespace NPC_Lore_Generator
 {
 
 
-
+    // When random or slider value is chosen, it takes random description of selected item.
     public class ContentGraph
     {
         public ContentGraph(int index)
