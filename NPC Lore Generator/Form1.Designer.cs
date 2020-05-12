@@ -51,6 +51,9 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.customTrackBar0 = new NPC_Lore_Generator.CustomTrackBar();
+            this.customTrackBar1 = new NPC_Lore_Generator.CustomTrackBar();
+            this.customTrackBar2 = new NPC_Lore_Generator.CustomTrackBar();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -83,15 +86,12 @@
             this.button11 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.customTrackBarSmall1 = new NPC_Lore_Generator.CustomTrackBarSmall();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.label3 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
-            this.customTrackBar0 = new NPC_Lore_Generator.CustomTrackBar();
-            this.customTrackBar1 = new NPC_Lore_Generator.CustomTrackBar();
-            this.customTrackBar2 = new NPC_Lore_Generator.CustomTrackBar();
-            this.customTrackBarSmall1 = new NPC_Lore_Generator.CustomTrackBarSmall();
             this.panel1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.panelDropDown_0.SuspendLayout();
@@ -210,7 +210,7 @@
             this.richTextBox1.Font = new System.Drawing.Font("Bodoni Bk BT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.richTextBox1.Location = new System.Drawing.Point(241, 77);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(523, 284);
+            this.richTextBox1.Size = new System.Drawing.Size(545, 284);
             this.richTextBox1.TabIndex = 3;
             this.richTextBox1.Text = resources.GetString("richTextBox1.Text");
             this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
@@ -374,6 +374,37 @@
             this.button1.Text = "0. World Setting";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click_2);
+            // 
+            // customTrackBar0
+            // 
+            this.customTrackBar0.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(91)))), ((int)(((byte)(91)))));
+            this.customTrackBar0.Location = new System.Drawing.Point(10, 50);
+            this.customTrackBar0.Name = "customTrackBar0";
+            this.customTrackBar0.Size = new System.Drawing.Size(155, 53);
+            this.customTrackBar0.TabIndex = 13;
+            this.customTrackBar0.Text = "customTrackBar1";
+            this.customTrackBar0.Click += new System.EventHandler(this.customTrackBar1_Click);
+            this.customTrackBar0.MouseCaptureChanged += new System.EventHandler(this.customTrackBar0_MouseCaptureChanged);
+            // 
+            // customTrackBar1
+            // 
+            this.customTrackBar1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(91)))), ((int)(((byte)(91)))));
+            this.customTrackBar1.Location = new System.Drawing.Point(10, 106);
+            this.customTrackBar1.Name = "customTrackBar1";
+            this.customTrackBar1.Size = new System.Drawing.Size(155, 53);
+            this.customTrackBar1.TabIndex = 14;
+            this.customTrackBar1.Text = "customTrackBar2";
+            this.customTrackBar1.MouseCaptureChanged += new System.EventHandler(this.customTrackBar1_MouseCaptureChanged);
+            // 
+            // customTrackBar2
+            // 
+            this.customTrackBar2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(91)))), ((int)(((byte)(91)))));
+            this.customTrackBar2.Location = new System.Drawing.Point(10, 162);
+            this.customTrackBar2.Name = "customTrackBar2";
+            this.customTrackBar2.Size = new System.Drawing.Size(155, 53);
+            this.customTrackBar2.TabIndex = 15;
+            this.customTrackBar2.Text = "customTrackBar2";
+            this.customTrackBar2.MouseCaptureChanged += new System.EventHandler(this.customTrackBar2_MouseCaptureChanged);
             // 
             // panel5
             // 
@@ -716,6 +747,15 @@
             this.label5.Size = new System.Drawing.Size(167, 19);
             this.label5.TabIndex = 14;
             // 
+            // customTrackBarSmall1
+            // 
+            this.customTrackBarSmall1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(91)))), ((int)(((byte)(91)))));
+            this.customTrackBarSmall1.Location = new System.Drawing.Point(93, 372);
+            this.customTrackBarSmall1.Name = "customTrackBarSmall1";
+            this.customTrackBarSmall1.Size = new System.Drawing.Size(81, 51);
+            this.customTrackBarSmall1.TabIndex = 13;
+            this.customTrackBarSmall1.MouseCaptureChanged += new System.EventHandler(this.customTrackBarSmall1_MouseCaptureChanged);
+            // 
             // timer1
             // 
             this.timer1.Interval = 15;
@@ -757,46 +797,6 @@
             this.richTextBox2.Size = new System.Drawing.Size(523, 284);
             this.richTextBox2.TabIndex = 13;
             this.richTextBox2.Text = "";
-            // 
-            // customTrackBar0
-            // 
-            this.customTrackBar0.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(91)))), ((int)(((byte)(91)))));
-            this.customTrackBar0.Location = new System.Drawing.Point(10, 50);
-            this.customTrackBar0.Name = "customTrackBar0";
-            this.customTrackBar0.Size = new System.Drawing.Size(155, 53);
-            this.customTrackBar0.TabIndex = 13;
-            this.customTrackBar0.Text = "customTrackBar1";
-            this.customTrackBar0.Click += new System.EventHandler(this.customTrackBar1_Click);
-            this.customTrackBar0.MouseCaptureChanged += new System.EventHandler(this.customTrackBar0_MouseCaptureChanged);
-            // 
-            // customTrackBar1
-            // 
-            this.customTrackBar1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(91)))), ((int)(((byte)(91)))));
-            this.customTrackBar1.Location = new System.Drawing.Point(10, 106);
-            this.customTrackBar1.Name = "customTrackBar1";
-            this.customTrackBar1.Size = new System.Drawing.Size(155, 53);
-            this.customTrackBar1.TabIndex = 14;
-            this.customTrackBar1.Text = "customTrackBar2";
-            this.customTrackBar1.MouseCaptureChanged += new System.EventHandler(this.customTrackBar1_MouseCaptureChanged);
-            // 
-            // customTrackBar2
-            // 
-            this.customTrackBar2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(91)))), ((int)(((byte)(91)))));
-            this.customTrackBar2.Location = new System.Drawing.Point(10, 162);
-            this.customTrackBar2.Name = "customTrackBar2";
-            this.customTrackBar2.Size = new System.Drawing.Size(155, 53);
-            this.customTrackBar2.TabIndex = 15;
-            this.customTrackBar2.Text = "customTrackBar2";
-            this.customTrackBar2.MouseCaptureChanged += new System.EventHandler(this.customTrackBar2_MouseCaptureChanged);
-            // 
-            // customTrackBarSmall1
-            // 
-            this.customTrackBarSmall1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(91)))), ((int)(((byte)(91)))));
-            this.customTrackBarSmall1.Location = new System.Drawing.Point(93, 372);
-            this.customTrackBarSmall1.Name = "customTrackBarSmall1";
-            this.customTrackBarSmall1.Size = new System.Drawing.Size(81, 51);
-            this.customTrackBarSmall1.TabIndex = 13;
-            this.customTrackBarSmall1.MouseCaptureChanged += new System.EventHandler(this.customTrackBarSmall1_MouseCaptureChanged);
             // 
             // Form1
             // 
